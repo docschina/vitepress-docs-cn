@@ -30,7 +30,7 @@ module.exports = {
     editLinkText: "在帮助我们在GitHub上改善此页",
     lastUpdated: "上次更新",
 
-    nav: [{ text: "配置参考", link: "/config/app/app" }],
+    nav: [{ text: "配置参考", link: "/config/app/basics" }],
 
     sidebar: {
       "/config/": [
@@ -42,8 +42,8 @@ module.exports = {
           text: "主题配置",
           children: [
             { text: "主页", link: "/config/theme/homepage" },
-            { text: "Algolia 搜索", link: "/config/theme/algolia-search" },
-            { text: "Carbon 广告", link: "/config/theme/carbon-ads" },
+            { text: "Algolia 搜索", link: "/config/theme/search" },
+            { text: "Carbon 广告", link: "/config/theme/ads" },
           ],
         },
       ],

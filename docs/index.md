@@ -5,7 +5,7 @@ heroAlt: VitePress
 heroText: VitePress
 tagline: VitePress中文文档
 actionText: 开始打工
-actionLink: /config/app
+actionLink: /config/app/basics
 features:
   - title: 业余
     details: 翻译不够信达雅
