@@ -4,8 +4,8 @@ heroImage: /book-mark-fill-72px.png
 heroAlt: VitePress
 heroText: VitePress
 tagline: VitePress中文文档
-actionText: 开始打工
-actionLink: /config/app/basics
+actionText: 开始
+actionLink: /guide/introduction/what-is-vitepress/
 features:
   - title: 业余
     details: 翻译不够信达雅
