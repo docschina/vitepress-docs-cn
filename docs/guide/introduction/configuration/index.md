@@ -19,3 +19,5 @@ module.exports = {
   description: "Just playing around.",
 };
 ```
+
+Check out the [Config Reference](https://vitepress.vuejs.org/config/basics.html) for a full list of options.
