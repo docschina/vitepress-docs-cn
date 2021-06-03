@@ -20,4 +20,4 @@ module.exports = {
 };
 ```
 
-Check out the [Config Reference](https://vitepress.vuejs.org/config/basics.html) for a full list of options.
+查看 [配置参考](../../../config/app/basics) 获得完整的配置列表.
