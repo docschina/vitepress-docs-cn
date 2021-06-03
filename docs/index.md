@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /logo.png
+heroImage: /book-mark-fill-72px.png
 heroAlt: VitePress
 heroText: VitePress
 tagline: VitePress中文文档
