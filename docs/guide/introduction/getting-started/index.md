@@ -44,7 +44,7 @@
   ✗ yarn docs:dev
   ```
 
-  VitePress 将在 http://localhost:3000 启动一个热加载开发服务器.
+  VitePress 将在 [http://localhost:3000](http://localhost:3000) 启动一个热加载开发服务器.
 
 到目前为止, 您应该已经有了一个基本但功能强大的 VitePress 文档站点.
 
