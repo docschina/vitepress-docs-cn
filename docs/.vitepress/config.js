@@ -41,7 +41,7 @@ module.exports = {
           text: "介绍",
           children: [
             {
-              text: "什么是VitePress",
+              text: "什么是VitePress?",
               link: "/guide/introduction/what-is-vitepress/",
             },
             {
