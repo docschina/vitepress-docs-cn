@@ -5,25 +5,25 @@
 - **步骤 1:** 创建并切换到一个新目录.
 
   ```bash
-  ✗ mkdir vitepress-starter && cd vitepress-starter
+  $ mkdir vitepress-starter && cd vitepress-starter
   ```
 
 - **步骤 2:** 使用包管理器进行初始化.
 
   ```bash
-  ✗ yarn init
+  $ yarn init
   ```
 
 - **步骤 3:** 在本地安装 VitePress.
 
   ```bash
-  ✗ yarn add --dev vitepress
+  $ yarn add --dev vitepress
   ```
 
 - **步骤 4:** 创建您的第一个文档.
 
   ```bash
-  ✗ mkdir docs && echo '# Hello VitePress' > docs/index.md
+  $ mkdir docs && echo '# Hello VitePress' > docs/index.md
   ```
 
 - **步骤 5:** 添加一些脚本到 `package.json`.
@@ -41,7 +41,7 @@
 - **Step. 6:** 在本地服务器上启动文档站点.
 
   ```bash
-  ✗ yarn docs:dev
+  $ yarn docs:dev
   ```
 
   VitePress 将在 [http://localhost:3000](http://localhost:3000) 启动一个热加载开发服务器.
