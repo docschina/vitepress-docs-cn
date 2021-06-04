@@ -75,7 +75,7 @@ module.exports = {
           children: [
             { text: "Frontmatter", link: "/guide/advanced/frontmatter/" },
             {
-              text: "全局计算",
+              text: "全局计算属性",
               link: "/guide/advanced/global-computed/",
             },
             {
