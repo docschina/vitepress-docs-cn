@@ -1,10 +1,10 @@
-# Deploying
+# 部署
 
-The following guides are based on some shared assumptions:
+以下指南基于一些共享的假设:
 
-- You are placing your docs inside the `docs` directory of your project;
-- You are using the default build output location (`.vitepress/dist`);
-- VitePress is installed as a local dependency in your project, and you have setup the following npm scripts:
+- 您将文档放在项目的`docs`目录下;
+- 您正在使用默认的构建输出位置(`.vitepress/dist`);
+- VitePress 作为本地依赖项安装在您的项目中, 并且您已经设置了以下 npm 脚本:
 
 ```json
 {
@@ -15,28 +15,28 @@ The following guides are based on some shared assumptions:
 }
 ```
 
-## Building The Docs
+## 构建文档
 
-You may run `yarn docs:build` command to build the docs.
+你可以运行`yarn docs:build`命令来构建文档.
 
 ```bash
 $ yarn docs:build
 ```
 
-By default, the build output will be placed at `.vitepress/dist`. You may deploy this `dist` folder to any of your preferred platforms.
+默认情况下, 构建输出将被放置在`.vitepress/dist`. 你可以将`dist`文件夹部署到任何你喜欢的平台上.
 
-### Testing The Docs Locally
+### 在本地测试文档
 
-Once you've built the docs, you may test them locally by running `yarn docs:serve` command.
+一旦你构建了这些文档, 你可以通过运行`yarn docs:serve`命令在本地测试.
 
 ```bash
 $ yarn docs:build
 $ yarn docs:serve
 ```
 
-The `serve` command will boot up local static web server that serves the files from `.vitepress/dist` at http://localhost:5000. It's an easy way to check if the production build looks OK in your local environment.
+`serve`命令将启动本地静态 web 服务器, 该服务器在 http://localhost:5000 为`.vitepress/Dist`中的文件提供服务, 这是检查生产构建在您的本地环境中看起来是否正常的一种简单方法.
 
-You may configure the port of the server py passing `--port` flag as an argument.
+您可以通过传入`--port`标志作为参数配置服务器的端口.
 
 ```json
 {
@@ -46,17 +46,17 @@ You may configure the port of the server py passing `--port` flag as an argument
 }
 ```
 
-Now the `docs:serve` method will launch the server at http://localhost:8080.
+现在, `docs: serve`方法将在 http://localhost:8080 启动服务器.
 
 ## GitHub Pages
 
-1. Set the correct `base` in `docs/.vitepress/config.js`.
+1.  在 `docs/.vitepress/config.js` 中设置正确的 `base`.
 
-   If you are deploying to `https://<USERNAME>.github.io/`, you can omit `base` as it defaults to `'/'`.
+    如果您部署到 `https://<USERNAME>.github.io/`, 你可以忽略 `base`, 因为它默认为'/'.
 
-   If you are deploying to `https://<USERNAME>.github.io/<REPO>/`, for example your repository is at `https://github.com/<USERNAME>/<REPO>`, then set `base` to `'/<REPO>/'`.
+    如果您部署到 `https://<USERNAME>.github.io/<REPO>/`, 例如您的存储库是在 `https://github.com/<USERNAME>/<REPO>`, 然后设置 `base` 为 `'/<REPO>/'`.
 
-2. Inside your project, create `deploy.sh` with the following content (with highlighted lines uncommented appropriately), and run it to deploy:
+2.  在你的项目中, 创建带有以下内容的 `deploy.sh` (带有突出显示的未适当注释的行), 并运行它来部署:
 
 ```bash{13,20,23}
 #!/usr/bin/env sh
@@ -87,22 +87,22 @@ cd -
 ```
 
 ::: tip
-You can also run the above script in your CI setup to enable automatic deployment on each push.
+您还可以在 CI 设置中运行上述脚本, 每次推送时启用自动部署.
 :::
 
 ### GitHub Pages and Travis CI
 
-1. Set the correct `base` in `docs/.vitepress/config.js`.
+1. 在 `docs/.vitepress/config.js` 中设置正确的 `base`.
 
-   If you are deploying to `https://<USERNAME or GROUP>.github.io/`, you can omit `base` as it defaults to `'/'`.
+   如果您部署到 `https://<USERNAME>.github.io/`, 你可以忽略 `base`, 因为它默认为'/'.
 
-   If you are deploying to `https://<USERNAME or GROUP>.github.io/<REPO>/`, for example your repository is at `https://github.com/<USERNAME>/<REPO>`, then set `base` to `'/<REPO>/'`.
+   如果您部署到 `https://<USERNAME>.github.io/<REPO>/`, 例如您的存储库是在 `https://github.com/<USERNAME>/<REPO>`, 然后设置 `base` 为 `'/<REPO>/'`.
 
-2. Create a file named `.travis.yml` in the root of your project.
+2. 在项目根目录创建一个名叫 `.travis.yml` 的文件.
 
-3. Run `yarn` or `npm install` locally and commit the generated lockfile (that is `yarn.lock` or `package-lock.json`).
+3. 在本地运行 `yarn` 或者 `npm install` 并提交生成的锁定文件(即 `yarn.lock` 或 `package-lock.json`).
 
-4. Use the GitHub Pages deploy provider template, and follow the [Travis CI documentation](https://docs.travis-ci.com/user/deployment/pages/).
+4. 使用 GitHub Pages 部署模板, 并遵循[Travis CI 文档](https://docs.travis-ci.com/user/deployment/pages/).
 
 ```yaml
 language: node_js
@@ -126,15 +126,15 @@ deploy:
 
 ## GitLab Pages and GitLab CI
 
-1. Set the correct `base` in `docs/.vitepress/config.js`.
+1. 在 `docs/.vitepress/config.js` 中设置正确的 `base`.
 
-   If you are deploying to `https://<USERNAME or GROUP>.gitlab.io/`, you can omit `base` as it defaults to `'/'`.
+   如果您部署到 `https://<USERNAME>.github.io/`, 你可以忽略 `base`, 因为它默认为'/'.
 
-   If you are deploying to `https://<USERNAME or GROUP>.gitlab.io/<REPO>/`, for example your repository is at `https://gitlab.com/<USERNAME>/<REPO>`, then set `base` to `'/<REPO>/'`.
+   如果您部署到 `https://<USERNAME>.github.io/<REPO>/`, 例如您的存储库是在 `https://github.com/<USERNAME>/<REPO>`, 然后设置 `base` 为 `'/<REPO>/'`.
 
-2. Set `dest` in `.vitepress/config.js` to `public`.
+2. 将 `.vitepress/config.js` 中的 `dest` 设置为 `public`.
 
-3. Create a file called `.gitlab-ci.yml` in the root of your project with the content below. This will build and deploy your site whenever you make changes to your content:
+3. 在您的工程根目录下创建一个名为 `.gitlab-ci.yml` 的文件, 内容如下. 这将在您对内容进行更改时构建和部署您的站点:
 
 ```yaml
 image: node:10.22.0
@@ -154,18 +154,18 @@ pages:
 
 ## Netlify
 
-1. On [Netlify](https://netlify.com), setup up a new project from GitHub with the following settings:
+1. 在 [Netlify](https://netlify.com), 从 GitHub 拉取新项目并进行如下设置:
 
 - **Build Command:** `vitepress build docs` or `yarn docs:build` or `npm run docs:build`
 - **Publish directory:** `docs/.vitepress/dist`
 
-2. Hit the deploy button.
+2. 点击部署按钮.
 
 ## Google Firebase
 
-1. Make sure you have [firebase-tools](https://www.npmjs.com/package/firebase-tools) installed.
+1. 确保你安装了 [firebase-tools](https://www.npmjs.com/package/firebase-tools).
 
-2. Create `firebase.json` and `.firebaserc` at the root of your project with the following content:
+2. 在您的工程根目录下创建 `firebase.json` 和 `.firebaserc`, 内容如下:
 
 `firebase.json`:
 
@@ -188,31 +188,31 @@ pages:
 }
 ```
 
-3. After running `yarn docs:build` or `npm run docs:build`, deploy using the command `firebase deploy`.
+3. 运行 `yarn docs:build` 或 `npm run docs:build` 后, 使用 `firebase deploy` 命令进行部署.
 
 ## Surge
 
-1. First install [surge](https://www.npmjs.com/package/surge), if you haven’t already.
+1. 如果尚未安装, 请首先安装 [surge](https://www.npmjs.com/package/surge).
 
-2. Run `yarn docs:build` or `npm run docs:build`.
+2. 运行 `yarn docs:build` 或 `npm run docs:build`.
 
-3. Deploy to surge by typing `surge docs/.vitepress/dist`.
+3. 通过键入 `surge docs/.vitepress/dist` 部署到 surge.
 
-You can also deploy to a [custom domain](http://surge.sh/help/adding-a-custom-domain) by adding `surge docs/.vitepress/dist yourdomain.com`.
+您也可以通过添加 `surge docs/.vitepress/dist yourdomain.com` 部署到[自定义文档](http://surge.sh/help/adding-a-custom-domain).
 
 ## Heroku
 
-1. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
+1. 安装 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 
-2. Create a Heroku account by [signing up](https://signup.heroku.com).
+2. 通过 [signing up](https://signup.heroku.com) 创建一个 Heroku 账号.
 
-3. Run `heroku login` and fill in your Heroku credentials:
+3. 运行`heroku login`并填写您的 heroku 凭据:
 
 ```bash
 $ heroku login
 ```
 
-4. Create a file called `static.json` in the root of your project with the below content:
+4. 在您的工程根目录下创建一个名为 `static.json` 的文件, 内容如下:
 
 `static.json`:
 
@@ -222,9 +222,9 @@ $ heroku login
 }
 ```
 
-This is the configuration of your site; read more at [heroku-buildpack-static](https://github.com/heroku/heroku-buildpack-static).
+这是您站点的配置; 在 [heroku-buildpack-static](https://github.com/heroku/heroku-buildpack-static) 上阅读更多内容.
 
-5. Set up your Heroku git remote:
+5. 设置你的 Heroku git 远程:
 
 ```bash
 # version change
@@ -239,7 +239,7 @@ $ heroku apps:create example
 $ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-static.git
 ```
 
-6. Deploy your site:
+6. 部署您的站点:
 
 ```bash
 # publish site
@@ -251,12 +251,11 @@ $ heroku open
 
 ## Vercel
 
-To deploy your VitePress app with a [Vercel for Git](https://vercel.com/docs/git), make sure it has been pushed to a Git repository.
+要使用 [Vercel for Git](https://vercel.com/docs/git) 部署您的 VitePress 应用程序, 请确保已将其推送到 Git 仓库.
 
-Go to https://vercel.com/import/git and import the project into Vercel using your Git of choice (GitHub, GitLab or BitBucket). Follow the wizard to select the project root with the project's `package.json` and override the build step using `yarn docs:build` or `npm run docs:build` and the output dir to be `./docs/.vitepress/dist`
+访问 https://vercel.com/import/git, 使用您选择的 Git (GitHub, GitLab 或 BitBucket)将项目导入到 Vercel 中. 按照向导的指示, 使用项目的 `package.json` 选择项目根目录, 并使用 `yarn docs：build` 或 `npm run docs：build` 覆盖构建步骤, 并将输出目录设置为 `./docs/.vitepress/dist`
+![覆盖 Vercel 配置](../../../images/vercel-configuration.png)
 
-![Override Vercel Configuration](../../../images/vercel-configuration.png)
+导入项目后, 所有后续到分支的推送都将生成预览部署, 并且对生产分支所做的所有更改(通常为"main"分支)将导致生产部署.
 
-After your project has been imported, all subsequent pushes to branches will generate Preview Deployments, and all changes made to the Production Branch (commonly "main") will result in a Production Deployment.
-
-Once deployed, you will get a URL to see your app live, such as the following: https://vitepress.vercel.app
+一旦部署完毕, 您将获得一个 URL 来查看您的应用程序的运行, 例如: https://vitepress.vercel.app
