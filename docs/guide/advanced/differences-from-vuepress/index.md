@@ -1,16 +1,16 @@
-# Differences from VuePress
+# 与 VuePress 的区别
 
-VitePress and VuePress have different [design goals](../../introduction/what-is-vitepress/). Both projects share similar config naming conventions. VitePress aims to have the bare minimum features needed for authoring docs. Other features are pushed to Themes. On the other hand, VuePress has more features out-of-the-box or enabled by its ecosystem of plugins.
+VitePress 和 VuePress 有不同的[设计目标](../../introduction/what-is-vitepress/). 这两个项目共享相似的配置命名约定. VitePress 的目标是为编写文档提供最基本的功能. 其他特性被推到主题中. 另一方面, VuePress 拥有更多的开箱即用的特性, 或者由它的插件生态系统支持的特性.
 
 ::: tip
-If you are using VuePress, there is no need to migrate to VitePress. Both projects are going to continue to co-exist for the foreseeable future.
+如果您使用的是 VuePress, 则无需迁移到 VitePress. 在可预见的未来, 这两个项目将继续共存.
 :::
 
 ::: warning
-Note this is early WIP! Currently, the focus is on making Vite stable and feature-complete first. It is not recommended to use this for anything serious yet.
+请注意, 这是早期 WIP! 目前的重点是首先使 Vite 稳定和功能齐全. 目前还不建议将其用于任何重要场景.
 :::
 
-In case you decide to move your project to VitePress, this is a list of differences from [VuePress v1.7.1](https://github.com/vuejs/vuepress/releases/tag/v1.7.1) that you need to take into account.
+如果您决定将您的项目移到 VitePress, 以下是您需要考虑的与[VuePress v1.7.1](https://github.com/vuejs/vuepress/releases/tag/v1.7.1)的不同之处.
 
 ## General
 
