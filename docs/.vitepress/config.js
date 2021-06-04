@@ -22,17 +22,17 @@ module.exports = {
     repo: "cabbage9/cn-vitepress",
     docsBranch: "master",
     docsDir: "docs",
-    algolia: {
-      apiKey: "b564625be65feb637a8f776517d5b143",
-      indexName: "cn-vitepress_NAME",
-    },
+    // algolia: {
+    //   apiKey: "b564625be65feb637a8f776517d5b143",
+    //   indexName: "cn-vitepress_NAME",
+    // },
     editLinks: true,
     editLinkText: "在帮助我们在GitHub上改善此页",
     lastUpdated: "上次更新",
 
     nav: [
       { text: "指南", link: "/guide/introduction/what-is-vitepress/" },
-      { text: "配置参考", link: "/config/app/basics" },
+      { text: "配置参考", link: "/config/app/basics/" },
     ],
 
     sidebar: {
@@ -93,14 +93,14 @@ module.exports = {
       "/config/": [
         {
           text: "应用配置",
-          children: [{ text: "基础", link: "/config/app/basics" }],
+          children: [{ text: "基础", link: "/config/app/basics/" }],
         },
         {
           text: "主题配置",
           children: [
-            { text: "主页", link: "/config/theme/homepage" },
-            { text: "Algolia 搜索", link: "/config/theme/search" },
-            { text: "Carbon 广告", link: "/config/theme/ads" },
+            { text: "主页", link: "/config/theme/homepage/" },
+            { text: "Algolia 搜索", link: "/config/theme/algolia-search/" },
+            { text: "Carbon 广告", link: "/config/theme/carbon-ads/" },
           ],
         },
       ],
