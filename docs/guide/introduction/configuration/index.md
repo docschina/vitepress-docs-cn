@@ -20,4 +20,4 @@ module.exports = {
 };
 ```
 
-查看 [配置参考](../../../config/app/basics) 获得完整的配置列表.
+查看 [配置参考](../../../config/app/basics/) 获得完整的配置列表.
