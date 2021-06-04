@@ -82,7 +82,7 @@
 
 ## $withBase
 
-辅助方法, 通过添加`.vitepress/config.js`中配置的`base`路径来生成正确的路径. 当你想要链接到[公共文件的基本路径](../../../introduction/asset-handling/#public-files)时, 它很有用.
+辅助方法, 通过添加`.vitepress/config.js`中配置的`base`路径来生成正确的路径. 当你想要链接到[公共文件的基本路径](../../../guide/introduction/asset-handling/#公共文件)时, 它很有用.
 
 ```html
 <img :src="$withBase('/foo.png')" alt="foo" />
