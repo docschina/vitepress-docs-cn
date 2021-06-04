@@ -1,10 +1,10 @@
-# Global Computed
+# 全局计算属性
 
-In VitePress, some core [computed properties](https://v3.vuejs.org/guide/computed.html#computed-properties) can be used by the default theme or custom themes. Or directly in Markdown pages using vue, for example using `$frontmatter.title` to access the title defined in the frontmatter section of the page.
+在 VitePress 中, 一些核心[计算属性](https://v3.vuejs.org/guide/computed.html#computed-properties)可以被默认主题或自定义主题使用. 或者直接在 Markdown 页面使用 vue, 例如使用`$frontmatter.title`来访问在页面的前部部分定义的标题.
 
 ## $site
 
-This is the `$site` value of the site you're currently reading:
+这是您当前正在阅读的站点的`$site`值:
 
 ```js
 {
@@ -20,7 +20,7 @@ This is the `$site` value of the site you're currently reading:
 
 ## $themeConfig
 
-Refers to `$site.themeConfig`.
+指`$site.hemeConfig`.
 
 ```js
 {
@@ -37,7 +37,7 @@ Refers to `$site.themeConfig`.
 
 ## $page
 
-This is the `$page` value of the page you're currently reading:
+这是您当前正在阅读的页面的`$page`值:
 
 ```js
 {
@@ -55,7 +55,7 @@ This is the `$page` value of the page you're currently reading:
 
 ## $frontmatter
 
-Reference of `$page.frontmatter`.
+指`$page.frontmatter`.
 
 ```js
 {
@@ -66,23 +66,23 @@ Reference of `$page.frontmatter`.
 
 ## $lang
 
-The language of the current page. Default: `en-US`.
+当前页面的语言. 默认值: `en-us`.
 
 ## $localePath
 
-The locale path prefix for the current page. Default: `/`.
+当前页的区域设置路径前缀. 默认值：`/`.
 
 ## $title
 
-Value of the `<title>` label used for the current page.
+当前页面使用的`<title>`标签的值.
 
 ## $description
 
-The content value of the `<meta name= "description" content= "...">` for the current page.
+当前页面`<meta name= "description" content= "...">`的值.
 
 ## $withBase
 
-Helper method to generate correct path by prepending the `base` path configured in `.vitepress/config.js`. It's useful when you want to link to [public files with base path](../../introduction/asset-handling/#public-files).
+辅助方法, 通过添加`.vitepress/config.js`中配置的`base`路径来生成正确的路径. 当你想要链接到[公共文件的基本路径](../../../introduction/asset-handling/#public-files)时, 它很有用.
 
 ```html
 <img :src="$withBase('/foo.png')" alt="foo" />
