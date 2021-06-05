@@ -1,31 +1,16 @@
 module.exports = {
-  head: [
-    [
-      "link",
-      { rel: "icon", href: "/book-mark-fill-24px.png", type: "image/png" },
-    ],
-    ["meta", { name: "author", content: "cabbage9" }],
-    ["meta", { name: "keywords", content: "vitepress 中文 文档" }],
-    [
-      "meta",
-      {
-        name: "description",
-        content: "VitePress中文文档",
-      },
-    ],
-  ],
   base: "/",
   lang: "zh-CN",
-  title: "VitePress",
-  // description: "VitePress中文文档",
+  title: "cn-vitepress",
+  description: "Vite & Vue powered static site generator - vitepress cn docs.",
   themeConfig: {
     repo: "cabbage9/cn-vitepress",
     docsBranch: "master",
     docsDir: "docs",
-    // algolia: {
-    //   apiKey: "b564625be65feb637a8f776517d5b143",
-    //   indexName: "cn-vitepress_NAME",
-    // },
+    algolia: {
+      apiKey: "b564625be65feb637a8f776517d5b143",
+      indexName: "cn-vitepress_NAME",
+    },
     editLinks: true,
     editLinkText: "在帮助我们在GitHub上改善此页",
     lastUpdated: "上次更新",
@@ -33,6 +18,10 @@ module.exports = {
     nav: [
       { text: "指南", link: "/guide/introduction/what-is-vitepress/" },
       { text: "配置参考", link: "/config/app/basics/" },
+      {
+        text: "发行说明",
+        link: "https://github.com/vuejs/vitepress/releases",
+      },
     ],
 
     sidebar: {
