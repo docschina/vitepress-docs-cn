@@ -31,7 +31,6 @@ module.exports = {
 
 ## 国际化 (i18n)
 
-If you have multiple locales in your documentation and you have defined a `locales` object in your `themeConfig`:
 如果您的文档中有多个语言环境, 并且您在 `themeconfig` 中定义了一个 `locales` 对象:
 
 ```js
