@@ -1,5 +1,5 @@
 module.exports = {
-  lang: 'en-US',
+  lang: 'zh-Hans',
   title: 'VitePress',
   description: 'Vite & Vue powered static site generator.',
 
@@ -39,6 +39,15 @@ module.exports = {
       '/guide/': getGuideSidebar(),
       '/config/': getConfigSidebar(),
       '/': getGuideSidebar()
+    }
+  },
+
+  markdown: {
+    anchor: {
+      renderPermalink: require('./plugins/render-perma-link')
+    },
+    config: (md) => {
+      md.use(require('./plugins/markdown-it-custom-anchor'))
     }
   }
 }
