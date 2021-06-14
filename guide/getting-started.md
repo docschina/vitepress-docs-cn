@@ -1,32 +1,32 @@
-# Getting Started
+# 开始 {#getting-started}
 
-This section will help you build a basic VitePress documentation site from ground up. If you already have an existing project and would like to keep documentation inside the project, start from Step 3.
+本章节将帮助你从零开始构建一个基础的 VitePress 文档站点、如果你想改造已有的项目，并希望保留原文档，请从第 3 步开始操作。
 
-- **Step. 1:** Create and change into a new directory.
+- **步骤 1：** 创建一个新目录，并进入该目录
 
   ```bash
   $ mkdir vitepress-starter && cd vitepress-starter
   ```
 
-- **Step. 2:** Initialize with your preferred package manager.
+- **步骤 2：** 使用你常用的包管理工具初始化 package.json
 
   ```bash
   $ yarn init
   ```
 
-- **Step. 3:** Install VitePress locally.
+- **步骤 3：** 本地安装 VitePress
 
   ```bash
   $ yarn add --dev vitepress
   ```
 
-- **Step. 4:** Create your first document.
+- **步骤 4：** 创建文档
 
   ```bash
   $ mkdir docs && echo '# Hello VitePress' > docs/index.md
   ```
 
-- **Step. 5:** Add some scripts to `package.json`.
+- **步骤 5：** 在 `package.json` 中添加 scripts 命令
 
   ```json
   {
@@ -38,14 +38,14 @@ This section will help you build a basic VitePress documentation site from groun
   }
   ```
 
-- **Step. 6:** Serve the documentation site in the local server.
+- **步骤 6：** 在本地启动文档站点
 
   ```bash
   $ yarn docs:dev
   ```
 
-  VitePress will start a hot-reloading development server at http://localhost:3000.
+  VitePress 将启动一个热重载的开发服务器，其地址是 http://localhost:3000。
 
-By now, you should have a basic but functional VitePress documentation site.
+此刻，你已经拥有了一个简单但功能强大的 VitePress 文档站点。
 
-When your documentation site starts to take shape, be sure to read the [deployment guide](./deploy).
+当你的文档站点成型时，请务必阅读 [部署指南](./deploy)。
