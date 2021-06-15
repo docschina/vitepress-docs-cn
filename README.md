@@ -15,7 +15,7 @@
 
 ```bash
 # 克隆本仓库
-$ git clone https://github.com/cabbage9/cn-vitepress.git
+$ git clone https://github.com/docschina/vitepress-docs-cn.git
 
 # 安装依赖
 $ yarn
