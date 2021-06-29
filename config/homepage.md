@@ -1,6 +1,6 @@
-# Theme Config: Homepage
+# 主题配置：主页 {#theme-config-homepage}
 
-VitePress provides a homepage layout. To use it, specify `home: true` plus some other metadata in your root `index.md`'s [YAML frontmatter](../guide/frontmatter). This is an example of how it works:
+VitePress 提供了主页布局，要启用它，请在根页面 `index.md` 的 [YAML frontmatter](../guide/frontmatter) 中指定 `home:true` 和一些其他的 metadata。这是一个展示它如何起作用的例子：
 
 ```yaml
 ---
@@ -20,5 +20,4 @@ features:
     details: VitePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
 footer: MIT Licensed | Copyright © 2019-present Evan You
 ---
-
 ```
