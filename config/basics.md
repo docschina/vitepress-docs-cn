@@ -1,59 +1,59 @@
-# App Config: Basics
+# 应用配置：基础 {#app-config-basics}
 
-::: tip
-The config reference is incomplete since the config format may still receive further changes. For a complete reference of the current available options, refer to [config.ts](https://github.com/vuejs/vitepress/blob/master/src/node/config.ts#L15).
+::: tip 提示
+因为配置格式仍可能接收进一步更改所以配置参考并不完整。想要获得当前可用选项的完整选项，请参考 [config.ts](https://github.com/vuejs/vitepress/blob/master/src/node/config.ts#L15)。
 :::
 
-## base
+## 基础 {#base}
 
 - Type: `string`
 - Default: `/`
 
-The base URL the site will be deployed at. You will need to set this if you plan to deploy your site under a sub path, for example, GitHub pages. If you plan to deploy your site to `https://foo.github.io/bar/`, then you should set base to `'/bar/'`. It should always start and end with a slash.
+站点将部署在的根 URL。如果你计划在子路径下部署你的站点，比如 GitHub 页面，你需要设置这个。如果你计划将你的站点部署到`https://foo.github.io/bar/`，那么你应该将 base 设置为 `'/bar/'`。它应该始终以斜杠开始和结束。
 
-The `base` is automatically prepended to all the URLs that start with `/` in other options, so you only need to specify it once.
+`base` 被自动添加到其他选项中以 `/` 开头的所有 url，因此您只需要指定它一次。
 
 ```js
 module.exports = {
-  base: '/base/'
-}
+  base: '/base/',
+};
 ```
 
-## lang
+## 语言 {#lang}
 
 - Type: `string`
 - Default: `en-US`
 
-The `lang` attribute for the site. This will render as a `<html lang="en-US">` tag in the page HTML.
+站点的 `lang` 属性。这将在 html 页面中呈现为 `<html lang="en-US">` 标签。
 
 ```js
 module.exports = {
-  lang: 'en-US'
-}
+  lang: 'en-US',
+};
 ```
 
-## title
+## 标题 {#title}
 
 - Type: `string`
 - Default: `VitePress`
 
-Title for the site. This will be the suffix for all page titles, and displayed in the navbar.
+网站的标题。这将是所有页面标题的后缀，并显示在导航栏中。
 
 ```js
 module.exports = {
-  title: 'VitePress'
-}
+  title: 'VitePress',
+};
 ```
 
-## description
+## 描述 {#description}
 
 - Type: `string`
 - Default: `A VitePress site`
 
-Description for the site. This will render as a `<meta>` tag in the page HTML.
+站点的描述。这将在 HTML 页面中呈现为 `<meta>` 标记。
 
 ```js
 module.exports = {
-  description: 'A VitePress site'
-}
+  description: 'A VitePress site',
+};
 ```
