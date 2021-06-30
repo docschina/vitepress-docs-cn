@@ -2,55 +2,55 @@
 sidebarDepth: 2
 ---
 
-# What is VitePress?
+# 什么是 VitePress？ {#what-is-vitepress}
 
-::: warning WARNING
-VitePress is currently in 0.x status. It is already suitable for out-of-the-box documentation use, but the config and theming API may still change between minor releases.
+::: warning 警告
+VitePress 目前是 0.x 的状态。它已经适合于开箱即用的文档使用，但是配置和主题 API 可能仍然会在小版本之间发生变化。
 :::
 
-VitePress is [VuePress](https://vuepress.vuejs.org/)' little brother, built on top of [Vite](https://github.com/vitejs/vite).
+VitePress 是 [VuePress](https://vuepress.vuejs.org/) 的小兄弟，建立在 [Vite](https://github.com/vitejs/vite) 之上。
 
-## Motivation
+## 动机 {#motivation}
 
-We love VuePress v1, but being built on top of Webpack, the time it takes to spin up the dev server for a simple doc site with a few pages is just becoming unbearable. Even HMR updates can take up to seconds to reflect in the browser!
+我们喜欢 VuePress v1，但是由于构建在 Webpack 之上，对于一个只有几个页面的简单文档站点来说，启动开发服务器所花费的时间简直令人难以忍受。即使是 HMR 更新也可能需要数秒才能反映到浏览器中！
 
-Fundamentally, this is because VuePress v1 is a Webpack app under the hood. Even with just two pages, it's a full on Webpack project (including all the theme source files) being compiled. It gets even worse when the project has many pages – every page must first be fully compiled before the server can even display anything!
+从根本上说，这是因为 VuePress v1 在本质上是一个 Webpack 应用程序。即使只有两个页面，它也是一个完整的需要编译的 Webpack 项目（包括所有主题源文件）。 当项目有很多页面时, 情况就更糟了，在服务器显示任何内容之前，每个页面都必须先完全编译！
 
-Incidentally, Vite solves these problems really well: nearly instant server start, an on-demand compilation that only compiles the page being served, and lightning-fast HMR. Plus, there are a few additional design issues I have noted in VuePress v1 over time but never had the time to fix due to the amount of refactoring it would require.
+顺便说一句，Vite 很好地解决了这些问题：服务器几乎立即启动，按需编译所服务的页面，以及快速的 HMR。另外，随着时间的推移，我注意到 VuePress v1 中还有一些另外的设计问题，但由于需要大量的重构，一直没有时间来修复。
 
-Now, with Vite and Vue 3, it is time to rethink what a "Vue-powered static site generator" can really be.
+现在，有了 Vite 和 Vue 3，是时候重新考虑 "Vue 驱动的静态站点生成器" 到底可以是什么了。
 
-## Improvements Over VuePress v1
+## 相较于 VuePress v1 的改进 {#improvements-over-vuepress-v1}
 
-There're couple of things that are improved from VuePress v1....
+与 VuePress v1 相比，VitePress 有几个改进...
 
-### It Uses Vue 3
+### 使用 Vue 3 {#it-uses-vue-3}
 
-Leverages Vue 3's improved template static analysis to stringify static content as much as possible. Static content is sent as string literals instead of JavaScript render function code – the JS payload is therefore _much_ cheaper to parse, and hydration also becomes faster.
+利用 Vue 3 改进的模板静态分析来尽可能严格地约束静态内容。静态内容以字符串文本的形式发送，而不是以 JavaScript 渲染函数代码的形式，因此 JS 负载解析起来开销更小，整合起来也变得更快。
 
-Note the optimization is applied while still allowing the user to freely mix Vue components inside markdown content – the compiler does the static/dynamic separation for you automatically and you never need to think about it.
+注意：在应用优化的同时，仍然允许用户在标记内容中自由混合 Vue 组件，编译器会自动为您进行静态/动态分离，您无需考虑这一点。
 
-### It Uses Vite Under The Hood
+### 底层使用 Vite {#it-uses-vite-under-the-hood}
 
-- Faster dev server start
-- Faster hot updates
-- Faster build (uses Rollup internally)
+- 更快的开发服务器启动
+- 更快的热更新
+- 更快的构建（内部使用 Rollup）
 
-### Lighter Page Weight
+### 页面更轻量化 {#lighter-page-weight}
 
-- Vue 3 tree-shaking + Rollup code splitting
-- Does not ship metadata for every page on every request. This decouples page weight from total number of pages. Only the current page's metadata is sent. Client side navigation fetches the new page's component and metadata together.
-- Does not use `vue-router` because the need of VitePress is very simple and specific - a simple custom router (under 200 LOC) is used instead.
-- (WIP) i18n locale data should also be fetched on demand.
+- Vue 3 tree-shaking + Rollup 代码拆分
+- 不为每个请求的每个页面提供元数据。这样可以将页面负担从总页面中分离出来。只发送当前页的元数据。客户端导航同时获取新页面的组件和元数据。
+- 不使用 `vue-router`，因为 VitePress 的需求非常简单和具体，使用一个简单的自定义路由器（低于 200 LOC）代替。
+- （WIP）i18n 语言环境数据也应按需获取。
 
-## Other Differences
+## 其他差异 {#lighter-page-weight}
 
-VitePress is more opinionated and less configurable: VitePress aims to scale back the complexity in the current VuePress and restart from its minimalist roots.
+VitePress 更指令化，更少的配置：VitePress 的目标是降低当前 VuePress 的复杂性，并从其贯彻极简主义。
 
-VitePress is future oriented: VitePress only targets browsers that support native ES module imports. It encourages the use of native JavaScript without transpilation, and CSS variables for theming.
+VitePress 面向未来：VitePress 只针对支持本地 ES 模块导入的浏览器。它鼓励在没有转换的情况下使用原生 JavaScript，并鼓励使用 CSS 变量进行主题化。
 
-## Will This Become The Next VuePress in The Future?
+## 这会成为未来的下一个 VuePress 吗？ {#will-this-become-the-next-vuepress-in-the-future}
 
-We already have [vuepress-next](https://github.com/vuepress/vuepress-next), which would be the next major version of VuePress. It also makes lots of improvements over VuePress v1, and also supports Vite now.
+我们已经有了 [vuepress-next](https://github.com/vuepress/vuepress-next)，这将是 VuePress 的下一个主要版本。它在 VuePress v1 的基础上做了很多改进，现在也支持 Vite。
 
-VitePress is not compatible with the current VuePress ecosystem (mostly themes and plugins). The overall idea is that VitePress will have a drastically more minimal theming API (preferring JavaScript APIs instead of file layout conventions) and likely no plugins (all customization is done in themes).
+VitePress 与当前的 VuePress 生态系统（主要是主题和插件）不兼容。总体思路是，VitePress 将拥有一个大大简化的主题 API（更喜欢 JavaScript API，而不是文件布局约定），而且很可能没有插件（所有定制都是在主题中完成的）。
