@@ -15,8 +15,8 @@
 
 ```js
 module.exports = {
-  base: '/base/',
-};
+  base: '/base/'
+}
 ```
 
 ## 语言 {#lang}
@@ -28,8 +28,8 @@ module.exports = {
 
 ```js
 module.exports = {
-  lang: 'en-US',
-};
+  lang: 'en-US'
+}
 ```
 
 ## 标题 {#title}
@@ -41,8 +41,8 @@ module.exports = {
 
 ```js
 module.exports = {
-  title: 'VitePress',
-};
+  title: 'VitePress'
+}
 ```
 
 ## 描述 {#description}
@@ -54,6 +54,6 @@ module.exports = {
 
 ```js
 module.exports = {
-  description: 'A VitePress site',
-};
+  description: 'A VitePress site'
+}
 ```

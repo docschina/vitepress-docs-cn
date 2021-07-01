@@ -8,8 +8,8 @@ module.exports = {
     carbonAds: {
       carbon: 'your-carbon-key',
       custom: 'your-carbon-custom',
-      placement: 'your-carbon-placement',
-    },
-  },
-};
+      placement: 'your-carbon-placement'
+    }
+  }
+}
 ```

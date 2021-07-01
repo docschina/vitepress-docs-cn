@@ -7,10 +7,10 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: 'your_api_key',
-      indexName: 'index_name',
-    },
-  },
-};
+      indexName: 'index_name'
+    }
+  }
+}
 ```
 
 有关更多选项，请查看 [Algolia DocSearch‘s documentation](https://docsearch.algolia.com/docs/behavior)。您可以将任何额外的选项与其他选项一起传递，例如传递 `searchParameters`：
@@ -22,11 +22,11 @@ module.exports = {
       apiKey: 'your_api_key',
       indexName: 'index_name',
       searchParameters: {
-        facetFilters: ['tags:guide,api'],
-      },
-    },
-  },
-};
+        facetFilters: ['tags:guide,api']
+      }
+    }
+  }
+}
 ```
 
 ## 国际化（i18n） {#internationalization-i18n}
@@ -41,10 +41,10 @@ module.exports = {
     },
     algolia: {
       apiKey: 'your_api_key',
-      indexName: 'index_name',
-    },
-  },
-};
+      indexName: 'index_name'
+    }
+  }
+}
 ```
 
 VitePress 会自动在 `searchParams.facetFilter` 数组中添加一个语言值正确的 `language` _facetFilter_。**请确保您的 DocSearch 配置也配置正确**通过添加`language`作为 faceting\_ 的 \_custom 属性，并根据 `<html>` 元素的 `lang` 属性进行设置。 以下是 DocSearch 配置的一个简短示例：
