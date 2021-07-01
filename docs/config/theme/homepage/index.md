@@ -1,6 +1,6 @@
-# 主题配置：主页
+# 主题配置：主页 {#theme-config-homepage}
 
-VitePress 提供主页布局, 要使用它, 请在根页面 `index.md` 的 [YAML frontmatter](https://vitepress.vuejs.org/guide/frontmatter.html) 中指定 `home:true` 和一些其他元数据. 这是一个指导如何工作的例子:
+VitePress 提供了主页布局，要启用它，请在根页面 `index.md` 的 [YAML frontmatter](../guide/frontmatter) 中指定 `home:true` 和一些其他的 metadata。这是一个展示它如何起作用的例子：
 
 ```yaml
 ---
