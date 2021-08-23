@@ -8,7 +8,7 @@ sidebarDepth: 2
 VitePress 目前是 0.x 的状态。它已经适合于开箱即用的文档使用，但是配置和主题 API 可能仍然会在小版本之间发生变化。
 :::
 
-VitePress 是 [VuePress](https://vuepress.vuejs.org/) 的小兄弟，建立在 [Vite](https://github.com/vitejs/vite) 之上。
+VitePress 是 建立在 [Vite](https://github.com/vitejs/vite) 之上的 [VuePress](https://vuepress.vuejs.org/) 小兄弟。
 
 ## 动机 {#motivation}
 
