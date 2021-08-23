@@ -86,7 +86,7 @@ VitePress 只有很少的内置组件可以在全局范围内使用。你可以�
 
 因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器渲染呈现的，所以任何 Vue 的使用都必须符合通用代码要求。简而言之，确保仅在 beforeMount 或 mounted 钩子中访问 Browser / DOM APIs。
 
-如果您使用或演示的组件不是 SSR 友好的（例如，包含自定义指令），您可以将它们包装在 `<ClientOnly/>` 组件中。
+如果你使用或演示的组件不是 SSR 友好的（例如包含自定义指令），你可以将它们包装在 `<ClientOnly/>` 组件中。
 
 ```html
 <ClientOnly>
