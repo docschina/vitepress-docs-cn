@@ -1,6 +1,6 @@
 # 主题配置：Algolia Search {#theme-config-algolia-search}
 
-`themeConfig.algolia` 选项允许您使用 [Algolia DocSearch](https://docsearch.algolia.com/)。要启用它，你至少需要提供 apiKey 和 indexName：
+`themeConfig.algolia` 选项允许你使用 [Algolia DocSearch](https://docsearch.algolia.com/)。要启用它，你至少需要提供 apiKey 和 indexName：
 
 ```js
 module.exports = {
@@ -84,4 +84,4 @@ VitePress 会自动在 `searchParams.facetFilter` 数组中添加一个语言值
 }
 ```
 
-您可以查看 [Vue Router 使用的 DocSearch 配置](https://github.com/algolia/docsearch-configs/blob/master/configs/next_router_vuejs.json) 以获得完整的示例。
+你可以查看 [Vue Router 使用的 DocSearch 配置](https://github.com/algolia/docsearch-configs/blob/master/configs/next_router_vuejs.json) 以获得完整的示例。
