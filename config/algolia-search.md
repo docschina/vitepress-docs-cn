@@ -1,6 +1,6 @@
-# Theme Config: Algolia Search
+# 主题配置：Algolia Search {#theme-config-algolia-search}
 
-The `themeConfig.algolia` option allows you to use [Algolia DocSearch](https://docsearch.algolia.com/). To enable it, you need to provide at least apiKey and indexName:
+`themeConfig.algolia` 选项允许你使用 [Algolia DocSearch](https://docsearch.algolia.com/)。要启用它，你至少需要提供 apiKey 和 indexName：
 
 ```js
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
 }
 ```
 
-For more options, check out [Algolia DocSearch's documentation](https://docsearch.algolia.com/docs/behavior). You can pass any extra option alongside other options, e.g. passing `searchParameters`:
+有关更多选项，请查看 [Algolia DocSearch‘s documentation](https://docsearch.algolia.com/docs/behavior)。你可以将任何额外的选项与其他选项一起传递，比如 `searchParameters`：
 
 ```js
 module.exports = {
@@ -29,9 +29,9 @@ module.exports = {
 }
 ```
 
-## Internationalization (i18n)
+## 国际化（i18n） {#internationalization-i18n}
 
-If you have multiple locales in your documentation and you have defined a `locales` object in your `themeConfig`:
+如果你的文档中有多个语言环境，并且你在 `themeconfig` 中定义了一个 `locales` 对象：
 
 ```js
 module.exports = {
@@ -47,7 +47,7 @@ module.exports = {
 }
 ```
 
-VitePress will automatically add a `language` _facetFilter_ to the `searchParams.facetFilter` array with the correct language value. **Make sure to properly configure your DocSearch config as well** by adding `language` as a _custom attribute for faceting_ and by setting it based on the `lang` attribute of the `<html>` element. Here is a short example of DocSearch config:
+VitePress 会自动在 `searchParams.facetFilter` 数组中添加一个语言值正确的 `language` _facetFilter_。通过添加 `language` 作为 faceting\_ 的 \_custom 属性 **请确保你的 DocSearch 配置也配置正确** ，并根据 `<html>` 元素的 `lang` 属性进行设置。 以下是 DocSearch 配置的一个简短示例：
 
 ```json
 {
@@ -84,4 +84,4 @@ VitePress will automatically add a `language` _facetFilter_ to the `searchParams
 }
 ```
 
-You can take a look at the [DocSearch config used by Vue Router](https://github.com/algolia/docsearch-configs/blob/master/configs/next_router_vuejs.json) for a complete example.
+你可以查看 [Vue Router 使用的 DocSearch 配置](https://github.com/algolia/docsearch-configs/blob/master/configs/next_router_vuejs.json) 以获得完整的示例。
