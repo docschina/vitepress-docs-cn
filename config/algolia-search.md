@@ -47,7 +47,7 @@ module.exports = {
 }
 ```
 
-VitePress 会自动在 `searchParams.facetFilter` 数组中添加一个语言值正确的 `language` _facetFilter_。**请确保您的 DocSearch 配置也配置正确**通过添加`language`作为 faceting\_ 的 \_custom 属性，并根据 `<html>` 元素的 `lang` 属性进行设置。 以下是 DocSearch 配置的一个简短示例：
+VitePress 会自动在 `searchParams.facetFilter` 数组中添加一个语言值正确的 `language` _facetFilter_。通过添加 `language` 作为 faceting\_ 的 \_custom 属性 **请确保你的 DocSearch 配置也配置正确** ，并根据 `<html>` 元素的 `lang` 属性进行设置。 以下是 DocSearch 配置的一个简短示例：
 
 ```json
 {
