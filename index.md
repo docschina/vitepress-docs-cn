@@ -53,4 +53,4 @@ VitePress 面向未来：VitePress 只针对支持本地 ES 模块导入的浏�
 
 我们已经有了 [vuepress-next](https://github.com/vuepress/vuepress-next)，这将是 VuePress 的下一个主要版本。它在 VuePress v1 的基础上做了很多改进，现在也支持 Vite。
 
-VitePress 与当前的 VuePress 生态系统（主要是主题和插件）不兼容。总体思路是，VitePress 将拥有一个大大简化的主题 API（更喜欢 JavaScript API，而不是文件布局约定），而且很可能没有插件（所有定制都是在主题中完成的）。
+VitePress 与当前的 VuePress 生态系统（主要是主题和插件）不兼容。总体思路是，VitePress 将拥有一个大大简化的主题 API（偏向于 JavaScript API，而不是文件布局约定），而且很可能没有插件（所有定制都是在主题中完成的）。
