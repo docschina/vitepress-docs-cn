@@ -2,7 +2,7 @@
 
 ## 辅助方法 {#helper-methods}
 
-以下方法可以从 `vitepress` 全局导入，通常用于自定义主题 Vue 组件。但是，因为 markdown 文件都会被编译成 Vue 单文件组件，所以它们也可以在 `.md` 页面中使用。
+以下方法通常用于自定义主题 Vue 组件，可以从 `vitepress` 全局导入。但是，因为 markdown 文件都会被编译成 Vue 单文件组件，所以它们也可以在 `.md` 文件中使用。
 
 以 `use*` 开头的方法表明它是一个 [Vue 3 组合式 API](https://v3.vuejs.org/guide/composition-api-introduction.html) 函数，只能在 `setup()` 或 `<script setup>` 中使用。
 
