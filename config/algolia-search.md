@@ -13,7 +13,7 @@ module.exports = {
 }
 ```
 
-有关更多选项，请查看 [Algolia DocSearch‘s documentation](https://docsearch.algolia.com/docs/behavior)。您可以将任何额外的选项与其他选项一起传递，例如传递 `searchParameters`：
+有关更多选项，请查看 [Algolia DocSearch‘s documentation](https://docsearch.algolia.com/docs/behavior)。你可以将任何额外的选项与其他选项一起传递，比如 `searchParameters`：
 
 ```js
 module.exports = {
