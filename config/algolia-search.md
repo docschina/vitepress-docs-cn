@@ -31,7 +31,7 @@ module.exports = {
 
 ## 国际化（i18n） {#internationalization-i18n}
 
-如果您的文档中有多个语言环境，并且您在 `themeconfig` 中定义了一个 `locales` 对象：
+如果你的文档中有多个语言环境，并且你在 `themeconfig` 中定义了一个 `locales` 对象：
 
 ```js
 module.exports = {
