@@ -67,7 +67,7 @@ interface Router {
 
 ## 全局组件 {#global-components}
 
-VitePress 只有很少的内置组件可以在全局范围内使用。您可以在您的 markdown 或自定义主题配置中使用这些组件。
+VitePress 只有很少的内置组件可以在全局范围内使用。你可以在你的 markdown 或自定义主题配置中使用这些组件。
 
 ### `<Content/>`
 
