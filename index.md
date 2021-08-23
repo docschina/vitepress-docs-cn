@@ -45,7 +45,7 @@ VitePress 是 建立在 [Vite](https://github.com/vitejs/vite) 之上的 [VuePre
 
 ## 其他差异 {#lighter-page-weight}
 
-VitePress 更指令化，更少的配置：VitePress 的目标是降低当前 VuePress 的复杂性，并从其贯彻极简主义。
+VitePress 更固执己见，可配置性更低：VitePress 的目标是降低当前 VuePress 的复杂性，并从其贯彻极简主义。
 
 VitePress 面向未来：VitePress 只针对支持本地 ES 模块导入的浏览器。它鼓励在没有转换的情况下使用原生 JavaScript，并鼓励使用 CSS 变量进行主题化。
 
