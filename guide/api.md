@@ -50,7 +50,7 @@ interface Route {
 
 ### `useRouter`
 
-返回 VitePress 路由实例，以便您可以以编程方式导航到另一个页面。
+返回 VitePress 路由实例，以便你以编程的方式导航到另一个页面。
 
 ```ts
 interface Router {
