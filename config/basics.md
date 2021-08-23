@@ -37,7 +37,7 @@ module.exports = {
 - Type: `string`
 - Default: `VitePress`
 
-网站的标题。这将是所有页面标题的后缀，并显示在导航栏中。
+网站的标题。所有页面的标题都会有这个后缀，导航栏中也会显示。
 
 ```js
 module.exports = {
