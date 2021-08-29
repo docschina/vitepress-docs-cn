@@ -1,7 +1,7 @@
 ---
 sidebarDepth: 2
 ---
-# 与 Vuepress 的区别{#differences-from-vuePress}
+# 与 Vuepress 的区别{#differences-from-vuepress}
 
 VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都有类似的配置命名约定。 VitePress 的目标是为编写文档提供最基本的功能。其他特性被委托给主题。另一方面，VuePress 拥有更多的开箱即用的特性，以及支持插件生态系统.
 
@@ -100,12 +100,12 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [`pageClass`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-page-class)
   - [`layout`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages)
 
-## 站点元数据{#siteData}
+## 站点元数据{#sitedata}
 
 - 不再支持
   - [`pages`](https://vuepress.vuejs.org/theme/writing-a-theme.html#site-and-page-metadata)
 
-## 页面元数据{#pageData}
+## 页面元数据{#pagedata}
 
 - 不再支持
   - `key`
