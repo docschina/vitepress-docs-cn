@@ -21,6 +21,7 @@
 放置在`public`中的资源将原样复制到 dist 目录的根目录。
 
 请注意，你应该使用根绝对路径引用放置在`public`中的文件，例如，`public/icon.png`在源代码中始终应该以`/icon.png`引用。
+
 ## 根 URL{#base-url}
 
 如果你的站点将部署到非根 URL上，则需要在`.vitepress/config.js`中设置`base`选项。例如，如果你计划将站点部署到`https://foo.github.io/bar/`，则`base`应设置为`‘/bar/’`（始终以斜杠开头和结尾）。
