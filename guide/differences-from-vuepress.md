@@ -36,7 +36,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [markdown 插槽](https://vuepress.vuejs.org/guide/markdown-slot.html)
   - 明确指定一个url的`~`前缀是一个[webpack 模块请求](https://vuepress.vuejs.org/guide/assets.html#relative-urls)
 
-## Site Config
+## 站点配置{#site-config}
 
 - 不再支持
   - `temp`
@@ -57,7 +57,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - `configureWebpack`, `chainWebpack`, `postcss`, `Stylus`, `scss`, `Sass`, `less` configs
   - [`evergreen`](https://vuepress.vuejs.org/config/#evergreen)
 
-## Default Theme Config
+## 默认主题配置{#default-theme-config}
 
 - 不再支持
   - [`smoothScroll`](https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling)
@@ -69,18 +69,18 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - `algolia` 变为 `search.algolia`
   - `searchPlaceholder` 变为 `search.placeholder`
 
-## Default Theme
+## 默认主题{#default-theme}
 
 - 不再支持
   - [`<code-group>` 和 `<code-block>`](https://vuepress.vuejs.org/theme/default-theme-config.html#code-groups-and-code-blocks)
 
-## Computed Globals
+## 全局计算属性{#computed-globals}
 
 - 不再支持
   - `$lang`
   - `$localePath`
 
-## Frontmatter Predefined Variables
+## Frontmatter 预定义变量{#frontmatter-predefined-variables}
 
 - 不再支持
   - `description`
@@ -91,7 +91,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [`permalink`](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables)
   - [`canonicalUrl`](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables)
 
-## Frontmatter Default Theme Variables
+## Frontmatter 默认主题变量{#frontmatter-default-theme-variables}
 
 - 不再支持
   - `prev`, `next`
@@ -100,19 +100,19 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [`pageClass`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-page-class)
   - [`layout`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages)
 
-## siteData
+## 站点元数据{#siteData}
 
 - 不再支持
   - [`pages`](https://vuepress.vuejs.org/theme/writing-a-theme.html#site-and-page-metadata)
 
-## pageData
+## 页面元数据{#pageData}
 
 - 不再支持
   - `key`
   - `path`
   - `regularPath`
 
-## Global Components
+## 全局组件{#global-components}
 
 - 不再支持
   - [`<Badge>`](https://vuepress.vuejs.org/guide/using-vue.html#badge)
