@@ -1,15 +1,15 @@
 module.exports = {
   lang: 'zh-Hans',
   title: 'VitePress',
-  description: 'Vite & Vue powered static site generator.',
+  description: 'Vite 与 Vue 驱动的静态站点生成器',
 
   themeConfig: {
-    repo: 'vuejs/vitepress',
+    repo: 'docschina/vitepress-docs-cn',
     docsDir: 'docs',
 
     editLinks: true,
-    editLinkText: 'Edit this page on GitHub',
-    lastUpdated: 'Last Updated',
+    editLinkText: '在 GitHub 上编辑此页面',
+    lastUpdated: '上次更新',
 
     algolia: {
       apiKey: 'c57105e511faa5558547599f120ceeba',
@@ -23,14 +23,14 @@ module.exports = {
     },
 
     nav: [
-      { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },
+      { text: '指南', link: '/', activeMatch: '^/$|^/guide/' },
       {
-        text: 'Config Reference',
+        text: '配置参考',
         link: '/config/basics',
         activeMatch: '^/config/'
       },
       {
-        text: 'Release Notes',
+        text: '发行说明',
         link: 'https://github.com/vuejs/vitepress/releases'
       }
     ],
@@ -55,25 +55,25 @@ module.exports = {
 function getGuideSidebar() {
   return [
     {
-      text: 'Introduction',
+      text: '介绍',
       children: [
-        { text: 'What is VitePress?', link: '/' },
-        { text: 'Getting Started', link: '/guide/getting-started' },
-        { text: 'Configuration', link: '/guide/configuration' },
-        { text: 'Asset Handling', link: '/guide/assets' },
-        { text: 'Markdown Extensions', link: '/guide/markdown' },
-        { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
-        { text: 'Deploying', link: '/guide/deploy' }
+        { text: '什么是 VitePress？', link: '/' },
+        { text: '入门', link: '/guide/getting-started' },
+        { text: '配置', link: '/guide/configuration' },
+        { text: '静态资源处理', link: '/guide/assets' },
+        { text: 'Markdown 扩展', link: '/guide/markdown' },
+        { text: '在 Markdown 中使用 Vue', link: '/guide/using-vue' },
+        { text: '部署', link: '/guide/deploy' }
       ]
     },
     {
-      text: 'Advanced',
+      text: '进阶',
       children: [
         { text: 'Frontmatter', link: '/guide/frontmatter' },
-        { text: 'Theming', link: '/guide/theming' },
-        { text: 'API Reference', link: '/guide/api' },
+        { text: '主题', link: '/guide/theming' },
+        { text: 'API 参考', link: '/guide/api' },
         {
-          text: 'Differences from Vuepress',
+          text: '与 VuePress 的区别',
           link: '/guide/differences-from-vuepress'
         }
       ]
@@ -84,15 +84,15 @@ function getGuideSidebar() {
 function getConfigSidebar() {
   return [
     {
-      text: 'App Config',
+      text: '应用设置',
       children: [{ text: 'Basics', link: '/config/basics' }]
     },
     {
-      text: 'Theme Config',
+      text: '主题设置',
       children: [
-        { text: 'Homepage', link: '/config/homepage' },
-        { text: 'Algolia Search', link: '/config/algolia-search' },
-        { text: 'Carbon Ads', link: '/config/carbon-ads' }
+        { text: '首页', link: '/config/homepage' },
+        { text: 'Algolia 搜索', link: '/config/algolia-search' },
+        { text: 'Carbon 广告', link: '/config/carbon-ads' }
       ]
     }
   ]
