@@ -1,10 +1,10 @@
-# Global Component
+# 全局组件 {#global-component}
 
-VitePress comes with few built-in component that can be used globally. You may use these components in your markdown or your custom theme configuration.
+VitePress 只有很少的内置组件可以在全局范围内使用。你可以在 Markdown 或自定义主题配置中使用这些组件。
 
-## Content
+## Content {#content}
 
-The `Content` component displays the rendered markdown contents. Useful [when creating your own theme](https://vitepress.vuejs.org/guide/customization.html).
+`Content` 组件渲染呈现的 Markdown 内容，在[创建你自己的 theme](https://vitepress.vuejs.org/guide/customization.html) 时很有用。
 
 ```vue
 <template>
@@ -13,13 +13,13 @@ The `Content` component displays the rendered markdown contents. Useful [when cr
 </template>
 ```
 
-## ClientOnly
+## ClientOnly {#client-only}
 
-The `ClientOnly` component renderes its slot only at client side.
+`ClientOnly` 组件仅在客户端渲染其 slot。
 
-Because VitePress applications are server-rendered in Node.js when generating static builds, any Vue usage must conform to the universal code requirements. In short, make sure to only access Browser / DOM APIs in beforeMount or mounted hooks.
+因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务端渲染的，所以任何 Vue 的使用都必须符合通用代码要求。简而言之，确保在 mount 或挂载钩子之前只访问 Browser / DOM APIs。
 
-If you are using or demoing components that are not SSR-friendly (for example, contain custom directives), you can wrap them inside the `ClientOnly` component.
+如果你使用或演示的组件是不友好的 SSR (例如，包含自定义指令)，可以将它们包装在 `ClientOnly` 组件中。
 
 ```html
 <ClientOnly>
@@ -27,7 +27,6 @@ If you are using or demoing components that are not SSR-friendly (for example, c
 </ClientOnly>
 ```
 
-## OutboundLink
+## OutboundLink {#outbound-link}
 
-The indicator `OutboundLink` is used to denote external links. In VitePress, this component has been followed by every external link.
-
+`OutboundLink` 指示符用于表示外部链接。在 VitePress 中，每个外部链接都紧跟着这个组件。
