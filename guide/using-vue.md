@@ -83,7 +83,7 @@ const { page } = useData()
 
 ## 使用组件 {#using-components}
 
-当你需要更加灵活时，VitePress 允许你使用自己的 Vue 组件扩展您的创作工具箱。
+当你需要更加灵活时，VitePress 允许你使用自己的 Vue 组件扩展你的创作工具箱。
 
 ### 在 markdown 中导入组件 {#importing-components-in-markdown}
 
@@ -112,14 +112,14 @@ This is a .md using a custom component
 在 `.vitepress/Theme/index.js` 文件中，`enhanceApp` 函数接收 Vue 应用实例，因此你可以像在常规 Vue 应用中一样[注册组件](https://v3.cn.vuejs.org/guide/component-registration.html#component-registration)。
 
 ```js
-import DefaultTheme from "vitepress/theme";
+import DefaultTheme from 'vitepress/theme'
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
-    app.component("VueClickAwayExample", VueClickAwayExample);
-  },
-};
+    app.component('VueClickAwayExample', VueClickAwayExample)
+  }
+}
 ```
 
 稍后在你的 markdown 文件中，该组件可以在内容之间交错使用。
@@ -208,7 +208,7 @@ VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情
 
 ## Browser API 访问限制 {#browser-api-access-restrictions}
 
-因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器呈现的，所以任何 Vue 的使用都必须符合[通用代码要求](https://ssr.vuejs.org/zh/guide/universal.html)。简而言之，确保只在 `beforeMount` 或 `mounted` 钩子中访问 Browser / DOM APIs。
+因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器渲染的，所以任何 Vue 的使用都必须符合[通用代码要求](https://ssr.vuejs.org/zh/guide/universal.html)。简而言之，确保只在 `beforeMount` 或 `mounted` 钩子中访问 Browser / DOM APIs。
 
 如果你使用或演示的组件是不友好的 SSR (例如，包含自定义指令)，可以将它们包装在 `ClientOnly` 组件中。
 
@@ -224,11 +224,11 @@ VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情
 <script>
 export default {
   mounted() {
-    import("./lib-that-access-window-on-import").then((module) => {
+    import('./lib-that-access-window-on-import').then((module) => {
       // use code
-    });
-  },
-};
+    })
+  }
+}
 </script>
 ```
 
@@ -243,16 +243,16 @@ export default {
 export default {
   data() {
     return {
-      dynamicComponent: null,
-    };
+      dynamicComponent: null
+    }
   },
 
   mounted() {
-    import("./lib-that-access-window-on-import").then((module) => {
-      this.dynamicComponent = module.default;
-    });
-  },
-};
+    import('./lib-that-access-window-on-import').then((module) => {
+      this.dynamicComponent = module.default
+    })
+  }
+}
 </script>
 ```
 
