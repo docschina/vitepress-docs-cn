@@ -1,0 +1,44 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [main]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Install
+        run: |
+          yarn
+          yarn clean
+      - name: Build
+        run: |
+          yarn build
+      - name: Check Build
+        run: |
+          sudo -i
+          sudo chown -R $USER ./.vitepress/dist
+      - name: Docschina Github Action
+        id: deployStatic
+        uses: lcxfs1991/docschina-actions@master
+        with:
+          skipFiles: ${{ secrets.SKIP_FILES }}
+          secretId: ${{ secrets.SECRET_ID }}
+          secretKey: ${{ secrets.SECRET_KEY }}
+          staticSrcPath: ./.vitepress/dist
+          bucket: ${{ secrets.BUCKET }}
+          region: ${{ secrets.REGION }}
+          forceFiles: ${{ secrets.FORCE_FILES }}  
