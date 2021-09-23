@@ -43,7 +43,7 @@ VitePress 是 建立在 [Vite](https://github.com/vitejs/vite) 之上的 [VuePre
 - 不使用 `vue-router`，因为 VitePress 的需求非常简单和具体，使用一个简单的自定义路由器（低于 200 LOC）代替。
 - （WIP）i18n 语言环境数据也应按需获取。
 
-## 其他差异 {#lighter-page-weight}
+## 其他差异 {#lighter-page-weight-1}
 
 VitePress 更固执己见，可配置性更低：VitePress 的目标是降低当前 VuePress 的复杂性，并从其贯彻极简主义。
 

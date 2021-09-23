@@ -94,13 +94,13 @@ const { page } = useData()
 import CustomComponent from '../components/CustomComponent.vue'
 </script>
 
-# Docs {#docs}
+# Docs
 
 This is a .md using a custom component
 
 <CustomComponent />
 
-## More docs {#more-docs}
+## More docs
 
 ...
 ```
@@ -173,7 +173,7 @@ npm install -D stylus
 </style>
 ```
 
-## Script & Style Hoisting {#using-vue-in-markdown}
+## Script & Style Hoisting {#using-vue-in-markdown-1}
 
 有时你可能只需要对当前页面应用一些 JavaScript 或 CSS，在这些情况下, 你可以直接在 Markdown 文件中编写根级别的 `script` 或 `style` 块，这些会在编译后的 HTML 中 hoisting，并作为生成的 Vue 单文件组件的 `script` 和 `style` 块使用：
 
