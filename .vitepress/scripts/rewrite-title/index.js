@@ -1,11 +1,11 @@
 const path = require('path')
 const fs = require('fs')
 const matterService = require('../utils/frontmatter-service')
-const workspacePath = path.resolve(__dirname, '..', '..')
+const workspacePath = path.resolve(__dirname, '..', '..', '..')
 
 const h1MdRegExp = /^#\s+(.+)\s+(\{#([\w-]+)\})$/
 /** 在此书写所有文章所在的目录名 */
-const articleDirs = ['blog', 'config', 'guide', 'plugins']
+const articleDirs = ['config', 'guide']
 
 const rewriteMarkdownTitle = (filePath) => {
   const matter = matterService.open(filePath)
