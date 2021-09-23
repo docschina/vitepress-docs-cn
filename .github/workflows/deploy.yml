@@ -30,7 +30,7 @@ jobs:
       - name: Check Build
         run: |
           sudo -i
-          sudo chown -R $USER ./dist
+          sudo chown -R $USER ./.vitepress/dist
       - name: Docschina Github Action
         id: deployStatic
         uses: lcxfs1991/docschina-actions@master
@@ -38,7 +38,7 @@ jobs:
           skipFiles: ${{ secrets.SKIP_FILES }}
           secretId: ${{ secrets.SECRET_ID }}
           secretKey: ${{ secrets.SECRET_KEY }}
-          staticSrcPath: ./dist
+          staticSrcPath: ./.vitepress/dist
           bucket: ${{ secrets.BUCKET }}
           region: ${{ secrets.REGION }}
           forceFiles: ${{ secrets.FORCE_FILES }}  
