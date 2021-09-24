@@ -1,7 +1,8 @@
 ---
 sidebarDepth: 2
 ---
-# 与 Vuepress 的区别{#differences-from-vuepress}
+
+# 与 Vuepress 的区别 {#differences-from-vuepress}
 
 VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都有类似的配置命名约定。 VitePress 的目标是为编写文档提供最基本的功能。其他特性被委托给主题。另一方面，VuePress 拥有更多的开箱即用的特性，以及支持插件生态系统.
 
@@ -15,7 +16,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
 
 如果你决定将你的项目迁移至 VitePress，以下是你需要考虑的与[VuePress v1.7.1](https://github.com/vuejs/vuepress/releases/tag/v1.7.1)的不同之处。
 
-## 全局{#general}
+## 全局 {#general}
 
 - 不再支持
   - 站点配置不再支持 YAML 和 TOML 格式。只支持 javascript 格式的`.vitepress/config.js`文件。
@@ -28,15 +29,15 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [styling](https://vuepress.vuejs.org/config/#styling) 不再支持`.vitepress/styles/index.styl`和`.vitepress/styles/palette.styl`。参见[自定义 CSS](/guide/theming.html#customizing-css)。
   - [应用级增强](https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements) API，应用程序的增强`.vitepress/enhanceApp.js`现在在`.vitepress/theme/index.js`中完成。参考[扩展默认主题](/guide/theming.html#extending-the-default-theme)。
 
-## Markdown{#markdown}
+## Markdown {#markdown}
 
 - 不再支持
   - 对[frontmatter 中 toml](https://vuepress.vuejs.org/guide/frontmatter.html#alternative-frontmatter-formats)的支持
   - [详情块](https://vuepress.vuejs.org/guide/markdown.html#custom-containers)
   - [markdown 插槽](https://vuepress.vuejs.org/guide/markdown-slot.html)
-  - 明确指定一个url的`~`前缀是一个[webpack 模块请求](https://vuepress.vuejs.org/guide/assets.html#relative-urls)
+  - 明确指定一个 url 的`~`前缀是一个[webpack 模块请求](https://vuepress.vuejs.org/guide/assets.html#relative-urls)
 
-## 站点配置{#site-config}
+## 站点配置 {#site-config}
 
 - 不再支持
   - `temp`
@@ -57,30 +58,30 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - `configureWebpack`, `chainWebpack`, `postcss`, `Stylus`, `scss`, `Sass`, `less` configs
   - [`evergreen`](https://vuepress.vuejs.org/config/#evergreen)
 
-## 默认主题配置{#default-theme-config}
+## 默认主题配置 {#default-theme-config}
 
 - 不再支持
   - [`smoothScroll`](https://vuepress.vuejs.org/theme/default-theme-config.html#smooth-scrolling)
   - [`displayAllHeaders`](https://vuepress.vuejs.org/theme/default-theme-config.html#displaying-header-links-of-all-pages)
   - [`activeHeaderLinks`](https://vuepress.vuejs.org/theme/default-theme-config.html#active-header-links)
-  - [sidebar groups](https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar-groups)中的 `sidebarDepth` 和 `initialOpenGroupIndex`  
+  - [sidebar groups](https://vuepress.vuejs.org/theme/default-theme-config.html#sidebar-groups)中的 `sidebarDepth` 和 `initialOpenGroupIndex`
 - 区别
   - `searchMaxSuggestions` 变为 `search.maxSuggestions`
   - `algolia` 变为 `search.algolia`
   - `searchPlaceholder` 变为 `search.placeholder`
 
-## 默认主题{#default-theme}
+## 默认主题 {#default-theme}
 
 - 不再支持
   - [`<code-group>` 和 `<code-block>`](https://vuepress.vuejs.org/theme/default-theme-config.html#code-groups-and-code-blocks)
 
-## 全局计算属性{#computed-globals}
+## 全局计算属性 {#computed-globals}
 
 - 不再支持
   - `$lang`
   - `$localePath`
 
-## Frontmatter 预定义变量{#frontmatter-predefined-variables}
+## Frontmatter 预定义变量 {#frontmatter-predefined-variables}
 
 - 不再支持
   - `description`
@@ -91,7 +92,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [`permalink`](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables)
   - [`canonicalUrl`](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables)
 
-## Frontmatter 默认主题变量{#frontmatter-default-theme-variables}
+## Frontmatter 默认主题变量 {#frontmatter-default-theme-variables}
 
 - 不再支持
   - `prev`, `next`
@@ -100,19 +101,19 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - [`pageClass`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-page-class)
   - [`layout`](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages)
 
-## 站点元数据{#sitedata}
+## 站点元数据 {#sitedata}
 
 - 不再支持
   - [`pages`](https://vuepress.vuejs.org/theme/writing-a-theme.html#site-and-page-metadata)
 
-## 页面元数据{#pagedata}
+## 页面元数据 {#pagedata}
 
 - 不再支持
   - `key`
   - `path`
   - `regularPath`
 
-## 全局组件{#global-components}
+## 全局组件 {#global-components}
 
 - 不再支持
   - [`<Badge>`](https://vuepress.vuejs.org/guide/using-vue.html#badge)
