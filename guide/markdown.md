@@ -2,19 +2,19 @@
 sidebarDepth: 3
 ---
 
-# Markdown Extensions
+# Markdown 扩展 {#markdown-extensions}
 
-## Header Anchors
+## 标题锚点 {#header-anchors}
 
-Headers automatically get anchor links applied. Rendering of anchors can be configured using the `markdown.anchor` option.
+标题会自动应用锚点链接。可以使用 `markdown.anchor` 选项配置锚点的渲染。
 
-## Links
+## 链接 {#links}
 
-### Internal Links
+### 内部链接 {#internal-links}
 
-Internal links are converted to router link for SPA navigation. Also, every `index.md` contained in each sub-directory will automatically be converted to `index.html`, with corresponding URL `/`.
+内部链路转换为 router link 以用于 SPA 导航。另外，每个子目录包含的 `index.md` 都会自动转换为 `index.html`，并有对应的 URL `/`。
 
-For example, given the following directory structure:
+例如，给定以下目录结构：
 
 ```
 .
@@ -29,7 +29,7 @@ For example, given the following directory structure:
    └─ four.md
 ```
 
-And providing you are in `foo/one.md`:
+且假设你在 `foo/one.md` 中：
 
 ```md
 [Home](/) <!-- sends the user to the root index.md -->
@@ -40,20 +40,20 @@ And providing you are in `foo/one.md`:
 [bar - four](../bar/four.html) <!-- or you can append .html -->
 ```
 
-### Page Suffix
+### 页面后缀 {#page-suffix}
 
-Pages and internal links get generated with the `.html` suffix by default.
+默认生成的页面和内部链接后缀为 `.html`。
 
-### External Links
+### 外部链接 {#external-links}
 
-Outbound links automatically get `target="_blank" rel="noopener noreferrer"`:
+外部链接自动配置 `target="_blank" rel="noopener noferrer"`：
 
 - [vuejs.org](https://vuejs.org)
 - [VitePress on GitHub](https://github.com/vuejs/vitepress)
 
-## Frontmatter
+## Frontmatter {#frontmatter}
 
-[YAML frontmatter](https://jekyllrb.com/docs/frontmatter/) is supported out of the box:
+[YAML frontmatter](https://jekyllrb.com/docs/frontmatter/) 支持开箱即用：
 
 ```yaml
 ---
@@ -62,13 +62,13 @@ lang: en-US
 ---
 ```
 
-This data will be available to the rest of the page, along with all custom and theming components.
+该数据对页面的其余部分以及所有自定义和主题化组件都可用。
 
-For more details, see [Frontmatter](./frontmatter.md).
+查看 [Frontmatter](./frontmatter.md) 获取更多细节。
 
-## GitHub-Style Tables
+## GitHub 风格 表格 {#github-style-tables}
 
-**Input**
+**输入**
 
 ```
 | Tables        | Are           | Cool  |
@@ -78,7 +78,7 @@ For more details, see [Frontmatter](./frontmatter.md).
 | zebra stripes | are neat      |    $1 |
 ```
 
-**Output**
+**输出**
 
 | Tables        |      Are      |   Cool |
 | ------------- | :-----------: | -----: |
@@ -88,39 +88,39 @@ For more details, see [Frontmatter](./frontmatter.md).
 
 ## Emoji :tada:
 
-**Input**
+**输入**
 
 ```
 :tada: :100:
 ```
 
-**Output**
+**输出**
 
 :tada: :100:
 
-A [list of all emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) is available.
+[可用的表情符号列表](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)。
 
-## Table of Contents
+## 目录 {#table-of-contents}
 
-**Input**
+**输入**
 
 ```
 [[toc]]
 ```
 
-**Output**
+**输出**
 
 [[toc]]
 
-Rendering of the TOC can be configured using the `markdown.toc` option.
+可以使用 `markdown.toc` 选项配置目录的渲染。
 
-## Custom Containers
+## 自定义容器 {#custom-containers}
 
-Custom containers can be defined by their types, titles, and contents.
+自定义容器可以通过它们的类型，标题和内容来定义。
 
-### Default Title
+### 默认标题 {#default-title}
 
-**Input**
+**输入**
 
 ```md
 ::: tip
@@ -140,7 +140,7 @@ This is a dangerous warning
 :::
 ```
 
-**Output**
+**输出**
 
 ::: tip
 This is a tip
@@ -158,9 +158,9 @@ This is a warning
 This is a dangerous warning
 :::
 
-### Custom Title
+### 自定义标题 {#custom-title}
 
-**Input**
+**输入**
 
 ```md
 ::: danger STOP
@@ -168,17 +168,17 @@ Danger zone, do not proceed
 :::
 ```
 
-**Output**
+**输出**
 
 ::: danger STOP
 Danger zone, do not proceed
 :::
 
-## Syntax Highlighting in Code Blocks
+## 代码块中的语法高亮显示 {#syntax-highlighting-in-code-blocks}
 
-VitePress uses [Prism](https://prismjs.com/) to highlight language syntax in Markdown code blocks, using coloured text. Prism supports a wide variety of programming languages. All you need to do is append a valid language alias to the beginning backticks for the code block:
+VitePress 使用 [Prism](https://prismjs.com/) 突出显示 Markdown 代码块中的语言语法，使用彩色文本。Prism 支持多种编程语言。你所需要做的就是在代码块的开头的反勾号后面添加一个有效的语言别名：
 
-**Input**
+**输入**
 
 ````
 ```js
@@ -189,7 +189,7 @@ export default {
 ```
 ````
 
-**Output**
+**输出**
 
 ```js
 export default {
@@ -198,7 +198,7 @@ export default {
 }
 ```
 
-**Input**
+**输入**
 
 ````
 ```html
@@ -210,7 +210,7 @@ export default {
 ```
 ````
 
-**Output**
+**输出**
 
 ```html
 <ul>
@@ -218,11 +218,11 @@ export default {
 </ul>
 ```
 
-A [list of valid languages](https://prismjs.com/#languages-list) is available on Prism’s site.
+Prism 的网站上提供了 [有效语言列表](https://prismjs.com/#languages-list)。
 
-## Line Highlighting in Code Blocks
+## 代码块中的行高亮显示 {#line-highlighting-in-code-blocks}
 
-**Input**
+**输入**
 
 ````
 ```js{4}
@@ -236,7 +236,7 @@ export default {
 ```
 ````
 
-**Output**
+**输出**
 
 ```js{4}
 export default {
@@ -248,13 +248,13 @@ export default {
 }
 ```
 
-In addition to a single line, you can also specify multiple single lines, ranges, or both:
+除单行外，你还可以指定多个单行，范围或同时指定这两种：
 
-- Line ranges: for example `{5-8}`, `{3-10}`, `{10-17}`
-- Multiple single lines: for example `{4,7,9}`
-- Line ranges and single lines: for example `{4,7-13,16,23-27,40}`
+- 行范围：例如 `{5-8}`, `{3-10}`, `{10-17}`
+- 多行：例如 `{4,7,9}`
+- 行范围和单行：例如 `{4,7-13,16,23-27,40}`
 
-**Input**
+**输入**
 
 ````
 ```js{1,4,6-7}
@@ -272,7 +272,7 @@ export default { // Highlighted
 ```
 ````
 
-**Output**
+**输出**
 
 ```js{1,4,6-8}
 export default { // Highlighted
@@ -288,9 +288,9 @@ export default { // Highlighted
 }
 ```
 
-## Line Numbers
+## 行号 {#line-numbers}
 
-You can enable line numbers for each code blocks via config:
+你可以通过配置启用每个代码块的行号：
 
 ```js
 module.exports = {
@@ -334,27 +334,27 @@ module.exports = {
   }
 </style>
 
-## Import Code Snippets
+## 导入代码片段 {#import-code-snippets}
 
-You can import code snippets from existing files via following syntax:
+你可以通过以下语法从现有文件中导入代码片段：
 
 ```md
 <<< @/filepath
 ```
 
-It also supports [line highlighting](#line-highlighting-in-code-blocks):
+它还支持 [行高亮显示](#line-highlighting-in-code-blocks)：
 
 ```md
 <<< @/filepath{highlightLines}
 ```
 
-**Input**
+**输入**
 
 ```md
 <<< @/snippets/snippet.js{2}
 ```
 
-**Code file**
+**代码文件**
 
 <!--lint disable strong-marker-->
 
@@ -362,7 +362,7 @@ It also supports [line highlighting](#line-highlighting-in-code-blocks):
 
 <!--lint enable strong-marker-->
 
-**Output**
+**输出**
 
 <!--lint disable strong-marker-->
 
@@ -371,18 +371,18 @@ It also supports [line highlighting](#line-highlighting-in-code-blocks):
 <!--lint enable strong-marker-->
 
 ::: tip
-The value of `@` corresponds to the source root. By default it's the VitePress project root, unless `srcDir` is configured.
+`@` 的值对应于 `process.cwd()`。默认情况下，它是 VitePress 项目的根目录，除非配置了 `srcDir`。
 :::
 
-You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding) to only include the corresponding part of the code file. You can provide a custom region name after a `#` following the filepath (`snippet` by default):
+你还可以使用 [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding) 来仅包括代码文件的相应部分。你可以在文件路径后的 `#` 后面提供自定义的范围名称(默认为 `snippet`)：
 
-**Input**
+**输入**
 
 ```md
 <<< @/snippets/snippet-with-region.js{1}
 ```
 
-**Code file**
+**代码文件**
 
 <!--lint disable strong-marker-->
 
@@ -390,7 +390,7 @@ You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/co
 
 <!--lint enable strong-marker-->
 
-**Output**
+**输出**
 
 <!--lint disable strong-marker-->
 
@@ -398,9 +398,9 @@ You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/co
 
 <!--lint enable strong-marker-->
 
-## Advanced Configuration
+## 进阶配置 {#advanced-configuration}
 
-VitePress uses [markdown-it](https://github.com/markdown-it/markdown-it) as the Markdown renderer. A lot of the extensions above are implemented via custom plugins. You can further customize the `markdown-it` instance using the `markdown` option in `.vitepress/config.js`:
+VitePress 使用 [markdown-it](https://github.com/markdown-it/markdown-it) 作为 Markdown 渲染器。上面的许多扩展都是通过自定义插件实现的。你可以通过 `.vitepress/config.js` 中的 `markdown` 选项进一步自定义 `markdown-it` 实例：
 
 ```js
 const anchor = require('markdown-it-anchor')

@@ -9,7 +9,7 @@ editLink: true
 ---
 ```
 
-在三条虚线之间，您可以设置 [预定义变量](#predefined-variables)，甚至可以创建你自己的自定义变量。这些变量可以通过 <code>$frontmatter</code> 变量使用。
+在三条虚线之间，你可以设置 [预定义变量](#predefined-variables)，甚至可以创建你自己的自定义变量。这些变量可以通过 <code>$frontmatter</code> 变量使用。
 
 以下是如何在 Markdown 文件中使用它的示例：
 
@@ -70,14 +70,14 @@ head:
 - Type: `boolean`
 - Default: `undefined`
 
-您可以使用 `navbar: false` 禁用特定页面上的导航栏
+你可以使用 `navbar: false` 禁用特定页面上的导航栏
 
 ### sidebar
 
 - Type: `boolean|'auto'`
 - Default: `undefined`
 
-您可以使用 `sidebar: auto` 决定在特定页面上显示侧边栏，也可以使用 `sidebar: false` 将其禁用
+你可以使用 `sidebar: auto` 决定在特定页面上显示侧边栏，也可以使用 `sidebar: false` 将其禁用
 
 ### editLink
 
