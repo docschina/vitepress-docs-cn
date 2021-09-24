@@ -200,7 +200,7 @@ export default {
 
 ## 内置组件 {#built-in-components}
 
-VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情请查看[全局组件指南](./global-component.md)。
+VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情请查看 [全局组件指南](./global-component.md)。
 
 **另请参阅：**
 
@@ -208,7 +208,7 @@ VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情
 
 ## Browser API 访问限制 {#browser-api-access-restrictions}
 
-因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器渲染的，所以任何 Vue 的使用都必须符合[通用代码要求](https://ssr.vuejs.org/zh/guide/universal.html)。简而言之，确保只在 `beforeMount` 或 `mounted` 钩子中访问 Browser / DOM APIs。
+因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器渲染的，所以任何 Vue 的使用都必须符合 [通用代码要求](https://ssr.vuejs.org/zh/guide/universal.html)。简而言之，确保只在 `beforeMount` 或 `mounted` 钩子中访问 Browser / DOM APIs。
 
 如果你使用或演示的组件是不友好的 SSR (例如，包含自定义指令)，可以将它们包装在 `ClientOnly` 组件中。
 
@@ -218,7 +218,7 @@ VitePress 提供了 `ClientOnly`，`Outbound Link` 等内置 Vue 组件，详情
 </ClientOnly>
 ```
 
-注意，这不会修复**导入时**访问 Browser APIs 的组件或库，假定要在导入时使用浏览器环境的代码，你需要在适当的生命周期钩子中动态地导入它们：
+注意，这不会修复 **导入时** 访问 Browser APIs 的组件或库，假定要在导入时使用浏览器环境的代码，你需要在适当的生命周期钩子中动态地导入它们：
 
 ```vue
 <script>

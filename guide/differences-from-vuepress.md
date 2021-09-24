@@ -4,30 +4,30 @@ sidebarDepth: 2
 
 # 与 Vuepress 的区别 {#differences-from-vuepress}
 
-VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都有类似的配置命名约定。 VitePress 的目标是为编写文档提供最基本的功能。其他特性被委托给主题。另一方面，VuePress 拥有更多的开箱即用的特性，以及支持插件生态系统.
+VitePress 和 VuePress 有不同的 [设计目标](../index.md)。两个项目都有类似的配置命名约定。VitePress 的目标是为编写文档提供最基本的功能。其他特性被委托给主题。另一方面，VuePress 拥有更多的开箱即用的特性，以及支持插件生态系统。
 
 ::: tip
 如果你正在使用 VuePress，就没有必要迁移到 VitePress。在可预见的未来，这两个项目将继续并存。
 :::
 
 ::: warning
-请注意， 本项目还处于早期 WIP 阶段！目前的重点是首先使 Vite 稳定且功能齐全。目前还不建议将其用于任何正式场景中。
+请注意，本项目还处于早期 WIP 阶段！目前的重点是首先使 Vite 稳定且功能齐全。目前还不建议将其用于任何正式场景中。
 :::
 
-如果你决定将你的项目迁移至 VitePress，以下是你需要考虑的与[VuePress v1.7.1](https://github.com/vuejs/vuepress/releases/tag/v1.7.1)的不同之处。
+如果你决定将你的项目迁移至 VitePress，以下是你需要考虑的与 [VuePress v1.7.1](https://github.com/vuejs/vuepress/releases/tag/v1.7.1) 的不同之处。
 
 ## 全局 {#general}
 
 - 不再支持
-  - 站点配置不再支持 YAML 和 TOML 格式。只支持 javascript 格式的`.vitepress/config.js`文件。
-  - 支持[插件](https://vuepress.vuejs.org/plugin/)，更多功能在主题中实现。
+  - 站点配置不再支持 YAML 和 TOML 格式。只支持 javascript 格式的 `.vitepress/config.js` 文件。
+  - 支持 [插件](https://vuepress.vuejs.org/plugin/)，更多功能在主题中实现。
   - [支持永久链接](https://vuepress.vuejs.org/guide/permalinks.html)
   - `.vitepress/templates`
-  - `.vitepress/components`中的组件[不再自动被注册为全局组件](https://vuepress.vuejs.org/)
+  - `.vitepress/components`中的组件 [不再自动被注册为全局组件](https://vuepress.vuejs.org/)
 - 区别
   - [公共文件](https://vuepress.vuejs.org/guide/assets.html#public-files)，直接复制到 dist 文件夹根目录下，从`.vitepress/public/`移到`public/`。
-  - [styling](https://vuepress.vuejs.org/config/#styling) 不再支持`.vitepress/styles/index.styl`和`.vitepress/styles/palette.styl`。参见[自定义 CSS](/guide/theming.html#customizing-css)。
-  - [应用级增强](https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements) API，应用程序的增强`.vitepress/enhanceApp.js`现在在`.vitepress/theme/index.js`中完成。参考[扩展默认主题](/guide/theming.html#extending-the-default-theme)。
+  - [styling](https://vuepress.vuejs.org/config/#styling) 不再支持 `.vitepress/styles/index.style` 和 `.vitepress/styles/palette.style`。参见 [自定义 CSS](/guide/theming.html#customizing-css)。
+  - [应用级增强](https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements) API，应用程序的增强 `.vitepress/enhanceApp.js` 现在在 `.vitepress/theme/index.js` 中完成。参考 [扩展默认主题](/guide/theming.html#extending-the-default-theme)。
 
 ## Markdown {#markdown}
 
@@ -35,7 +35,7 @@ VitePress 和 VuePress 有不同的[设计目标](../index.md)。两个项目都
   - 对[frontmatter 中 toml](https://vuepress.vuejs.org/guide/frontmatter.html#alternative-frontmatter-formats)的支持
   - [详情块](https://vuepress.vuejs.org/guide/markdown.html#custom-containers)
   - [markdown 插槽](https://vuepress.vuejs.org/guide/markdown-slot.html)
-  - 明确指定一个 url 的`~`前缀是一个[webpack 模块请求](https://vuepress.vuejs.org/guide/assets.html#relative-urls)
+  - 明确指定一个 url 的 `~` 前缀是一个[webpack 模块请求](https://vuepress.vuejs.org/guide/assets.html#relative-urls)
 
 ## 站点配置 {#site-config}
 

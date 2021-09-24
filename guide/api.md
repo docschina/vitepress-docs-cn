@@ -71,7 +71,7 @@ VitePress 只有很少的内置组件可以在全局范围内使用。你可以�
 
 ### `<Content/>`
 
-`<Content/>` 组件呈现渲染出来的 markdown 内容。[这在创建您自己的主题时很有用](https://vitepress.vuejs.org/guide/customization.html)。
+`<Content/>` 组件呈现渲染出来的 markdown 内容。[这在创建你自己的主题时很有用](https://vitepress.vuejs.org/guide/customization.html)。
 
 ```vue
 <template>
