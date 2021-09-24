@@ -85,7 +85,7 @@ function getConfigSidebar() {
   return [
     {
       text: '应用设置',
-      children: [{ text: 'Basics', link: '/config/basics' }]
+      children: [{ text: '基础知识', link: '/config/basics' }]
     },
     {
       text: '主题设置',
