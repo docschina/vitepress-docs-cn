@@ -31,11 +31,7 @@ interface EnhanceAppContext {
 }
 ```
 
-<<<<<<< HEAD
 主题入口文件应该将主题作为它的默认导出：
-=======
-The theme entry file should export the theme as its default export:
->>>>>>> b4e4f7af528726930dede10e701e5bdb9200e59f
 
 ```js
 // .vitepress/theme/index.js
@@ -51,11 +47,7 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
 ...其中的 `Layout` 组件可以像这样：
-=======
-...where the `Layout` component could look like this:
->>>>>>> b4e4f7af528726930dede10e701e5bdb9200e59f
 
 ```vue
 <!-- .vitepress/theme/Layout.vue -->
