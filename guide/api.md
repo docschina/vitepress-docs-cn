@@ -82,7 +82,11 @@ VitePress 只有很少的内置组件可以在全局范围内使用。你可以�
 
 ### `<ClientOnly/>`
 
+<<<<<<< HEAD
 `<ClientOnly/>` 组件仅在客户端渲染其插槽。
+=======
+The `<ClientOnly/>` component renders its slot only at client side.
+>>>>>>> 72d0ff919ae24946f0975dfb61b0c4a80696b6a9
 
 因为在生成静态构建时，VitePress 应用程序是在 Node.js 中服务器渲染呈现的，所以任何 Vue 的使用都必须符合通用代码要求。简而言之，确保仅在 beforeMount 或 mounted 钩子中访问 Browser / DOM APIs。
 
