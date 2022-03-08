@@ -138,8 +138,11 @@ This is a warning
 ::: danger
 This is a dangerous warning
 :::
-```
 
+::: details
+This is a details block, which does not work in Internet Explorer or Edge.
+:::
+```
 **输出**
 
 ::: tip
@@ -158,20 +161,40 @@ This is a warning
 This is a dangerous warning
 :::
 
+::: details
+This is a details block, which does not work in Internet Explorer or Edge.
+:::
+
 ### 自定义标题 {#custom-title}
 
 **输入**
 
-```md
+````md
 ::: danger STOP
 Danger zone, do not proceed
 :::
+
+::: details Click me to view the code
+
+```js
+console.log('Hello, VitePress!')
 ```
+
+:::
+````
 
 **输出**
 
 ::: danger STOP
 Danger zone, do not proceed
+:::
+
+::: details Click me to view the code
+
+```js
+console.log('Hello, VitePress!')
+```
+
 :::
 
 ## 代码块中的语法高亮显示 {#syntax-highlighting-in-code-blocks}
