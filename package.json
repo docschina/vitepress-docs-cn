@@ -9,7 +9,7 @@
 		"chalk": "^4.1.0",
 		"gray-matter": "^4.0.3",
 		"lodash": "^4.17.21",
-		"vitepress": "^0.19.1",
+		"vitepress": "^0.22.3",
 		"yorkie": "^2.0.0"
 	},
 	"scripts": {
