@@ -38,7 +38,7 @@ $ yarn docs:build
 $ yarn docs:serve
 ```
 
-`serve` 命令将启动本地静态 web 服务器，该服务器在 http://localhost:5000 为 `.vitepress/dist` 中的文件提供服务，这是检查生产构建在你的本地环境中看起来是否正常的一种简单方法。
+`serve` 命令将启动本地静态 web 服务器，该服务器在 [http://localhost:5000](http://localhost:5000) 为 `.vitepress/dist` 中的文件提供服务，这是检查生产构建在你的本地环境中看起来是否正常的一种简单方法。
 
 你可以通过传入 `--port` 标志作为参数配置服务器的端口。
 
@@ -50,7 +50,7 @@ $ yarn docs:serve
 }
 ```
 
-现在执行 `docs:serve` 命令将在 http://localhost:8080 启动服务器。
+现在执行 `docs:serve` 命令将在 [http://localhost:8080](http://localhost:8080) 启动服务器。
 
 ## GitHub Pages {#github-pages}
 
