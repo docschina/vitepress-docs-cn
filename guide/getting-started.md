@@ -44,7 +44,7 @@
   $ yarn docs:dev
   ```
 
-  VitePress 将启动一个热重载的开发服务器，其地址是 http://localhost:3000。
+  VitePress 将启动一个热重载的开发服务器，其地址是 [http://localhost:3000](http://localhost:3000)。
 
 此刻，你已经拥有了一个简单但功能强大的 VitePress 文档站点。
 
